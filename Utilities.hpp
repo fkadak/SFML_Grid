@@ -10,7 +10,4 @@ enum AppState {
     MAP_GEN = 1
 };
 
-struct Point {
-    int x;
-    int y;
-};
+std::vector<std::pair <std::string, sf::Color>> colors;

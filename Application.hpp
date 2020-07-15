@@ -1,12 +1,14 @@
-#include "Button.hpp"
+#include "UserInterface.hpp"
 
 class Application{
 private:
     sf::RenderWindow window;
     AppState currentState;
-    std::vector <Button> buttons;
+    
+    std::vector <UserInterface> UI;
 public:
-    Application();
+    Application() = default;
 
     void run();
+    void initialize();
 };
